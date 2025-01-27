@@ -18,14 +18,6 @@ export default function Home() {
          <ImageCarousel/>
         </ol>
 
-        <Image
-          className="dark:invert"
-          src="/coupe-grand-palais/file.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
         <div className="flex gap-4 items-center flex-col">
           <h1 className="text-2xl font-semibold mb-3">
             Le Coupé Grand Palais à Rétromobile 2025
