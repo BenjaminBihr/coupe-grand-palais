@@ -8,7 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className=""
-          src="coupe-grand-palais/grand-palais-logo-white.png"
+          src="/coupe-grand-palais/grand-palais-logo-white.png"
           alt="Next.js logo"
           width={250}
           height={100}
@@ -18,6 +18,14 @@ export default function Home() {
          <ImageCarousel/>
         </ol>
 
+        <Image
+          className="dark:invert"
+          src="/coupe-grand-palais/file.svg"
+          alt="Next.js logo"
+          width={180}
+          height={38}
+          priority
+        />
         <div className="flex gap-4 items-center flex-col">
           <h1 className="text-2xl font-semibold mb-3">
             Le Coupé Grand Palais à Rétromobile 2025
