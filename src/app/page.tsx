@@ -8,7 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className=""
-          src="coupe-grand-palais/grand_palais_logo_white.png"
+          src="coupe-grand-palais/grand-palais-logo-white.png"
           alt="Next.js logo"
           width={250}
           height={100}
