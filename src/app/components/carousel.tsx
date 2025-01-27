@@ -3,6 +3,7 @@
 import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 const ImageCarousel = () => {
      const [emblaRef] = useEmblaCarousel({
@@ -21,11 +22,14 @@ const ImageCarousel = () => {
            <div className="embla__container">
            {images.map((image, index) => (
              <div key={index} className="embla__slide">
-               <img 
-               src={image} 
-               alt={`Slide ${index + 1}`} 
-               className="embla__slide__img rounded-lg" 
-               />
+               <Image
+                  className="embla__slide__img rounded-lg" 
+                  src={image} 
+                  alt={`Slide ${index + 1}`} 
+                  width={250}
+                  height={100}
+                  priority
+                />
              </div>
            ))}
            </div>
