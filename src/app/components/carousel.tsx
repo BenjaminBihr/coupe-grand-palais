@@ -12,10 +12,10 @@ const ImageCarousel = () => {
      skipSnaps: false,
      },  [Autoplay()]);
     const images = [
-     'grand_palais_01.jpg',
-     'grand_palais_02.jpg',
-     'grand_palais_03.jpg',
-     'grand_palais_04.jpg',
+     '/grand_palais_01.jpg',
+     '/grand_palais_02.jpg',
+     '/grand_palais_03.jpg',
+     '/grand_palais_04.jpg',
      ];
       return (
          <div className="embla" ref={emblaRef}>

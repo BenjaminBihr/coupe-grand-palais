@@ -1,47 +1,54 @@
 import Image from "next/image";
 import ImageCarousel from "./components/carousel";
 
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-martian-mono)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className=""
-          src="grand-palais-logo-white.png"
+          src="/grand-palais-logo-white.png"
           alt="Next.js logo"
           width={250}
           height={100}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-         <ImageCarousel/>
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-martian-mono)]">
+          <ImageCarousel />
         </ol>
 
         <div className="flex gap-4 items-center flex-col w-full">
           <h1 className="text-2xl font-semibold mb-3">
             Le Coupé Grand Palais à Rétromobile 2025
-            </h1>
-          <p>
-              Près de 70 ans après l’iconique DS19 dévoilée au Grand Palais en 1955, 
-              le salon Rétromobile 2025 accueille à nouveau le coupé Grand Palais, déjà présenté en 2019.
-          </p>
-          <p>
-              Cette création rend hommage à Flaminio Bertoni, dont l’idée d’un coupé DS fut interrompue par sa disparition. 
-              Fidèle à l’élégance de la berline originale, le coupé réinvente avec modestie l’art de la carrosserie française 
-              des années 30, mêlant lignes redessinées et raffinement.
-          </p>
-          <p>
-              Ce voyage temporel évoque l’âge d’or des années 50, une époque où progrès techniques 
-              et rêves d’avenir se conjuguaient harmonieusement. Respectueux de l’histoire, le coupé 
-              intègre cependant des équipements modernes comme les vitres électriques, sans dénaturer son authenticité.
-          </p>
-          <p>
-              Basé sur une DS d’époque, il conserve son empattement, sa mécanique et un poids similaire, 
-              tout en sublimant son design intérieur et extérieur.
-          </p>  
+          </h1>
+          <div className="font-[family-name:var(--font-archivo)]">
+            <p>
+              Près de 70 ans après l’iconique DS19 dévoilée au Grand Palais en
+              1955, le salon Rétromobile 2025 accueille à nouveau le coupé Grand
+              Palais, déjà présenté en 2019.
+            </p>
+            <p>
+              Cette création rend hommage à Flaminio Bertoni, dont l’idée d’un
+              coupé DS fut interrompue par sa disparition. Fidèle à l’élégance
+              de la berline originale, le coupé réinvente avec modestie l’art de
+              la carrosserie française des années 30, mêlant lignes redessinées
+              et raffinement.
+            </p>
+            <p>
+              Ce voyage temporel évoque l’âge d’or des années 50, une époque où
+              progrès techniques et rêves d’avenir se conjuguaient
+              harmonieusement. Respectueux de l’histoire, le coupé intègre
+              cependant des équipements modernes comme les vitres électriques,
+              sans dénaturer son authenticité.
+            </p>
+            <p>
+              Basé sur une DS d’époque, il conserve son empattement, sa
+              mécanique et un poids similaire, tout en sublimant son design
+              intérieur et extérieur.
+            </p>
+          </div>
         </div>
-        <div className="flex gap-4 items-center flex-col w-full">
+        <div className="flex gap-4 items-center flex-col w-full font-[family-name:var(--font-archivo)]">
           <h3 className="text-2xl font-semibold">Contact</h3>
           <p className="text-xl">
             <a
@@ -62,10 +69,7 @@ export default function Home() {
             </a>
           </p>
           <p className="text-xl underline">
-            <a
-              href="tel:+33243213045"
-              className="hover:underline"
-            >
+            <a href="tel:+33243213045" className="hover:underline">
               +33 2 43 21 30 45
             </a>
           </p>
@@ -79,9 +83,7 @@ export default function Home() {
           ></iframe>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-       
-      </footer>
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
   );
 }
