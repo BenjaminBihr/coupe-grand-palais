@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #15201C;
+  --background: #15201c;
   --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #15201C;
+    --background: #15201c;
     --foreground: #ededed;
   }
 }
@@ -22,21 +22,21 @@ body {
 
 .embla {
   overflow: hidden;
- }
+}
 
- .embla__container {
+.embla__container {
   display: flex;
- }
- 
- .embla__slide {
+}
+
+.embla__slide {
   flex: 0 0 auto;
   width: 100%;
   max-width: 100%;
   padding: 0 10px;
- }
+}
 
- .embla__slide__img {
+.embla__slide__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
- }
+}

@@ -15,10 +15,10 @@ const ImageCarousel = () => {
     [Autoplay()]
   );
   const images = [
-    "grand_palais_01.jpg",
-    "grand_palais_02.jpg",
-    "grand_palais_03.jpg",
-    "grand_palais_04.jpg",
+    "/grand_palais_01.jpg",
+    "/grand_palais_02.jpg",
+    "/grand_palais_03.jpg",
+    "/grand_palais_04.jpg",
   ];
   return (
     <div className="embla" ref={emblaRef}>
@@ -29,8 +29,8 @@ const ImageCarousel = () => {
               className="embla__slide__img rounded-lg"
               src={image}
               alt={`Slide ${index + 1}`}
-              width={250}
-              height={100}
+              width={800}
+              height={500}
               priority
             />
           </div>
