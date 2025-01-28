@@ -17,14 +17,14 @@ export default function Form() {
 
   return (
     <div className="flex w-full flex-col items-center w-full gap-8">
-      <h1 className="text-2xl font-semibold">Nous contacter </h1>
+      <h1 className="text-2xl font-semibold">Nous contacter</h1>
       <form className="max-w-sm mx-auto w-full" action={create}>
         <div className="mb-5">
           <label
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-            Your email
+            Votre email
           </label>
           <input
             type="email"
@@ -40,7 +40,7 @@ export default function Form() {
             htmlFor="message"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-            Your message
+            Votre message
           </label>
           <textarea
             id="message"
@@ -55,7 +55,7 @@ export default function Form() {
           type="submit"
           className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
         >
-          Send it
+          Envoyer
         </button>
       </form>
     </div>
