@@ -18,7 +18,7 @@ export default function Form() {
   return (
     <div className="flex w-full flex-col items-center w-full gap-8">
       <h1 className="text-2xl font-semibold">Nous contacter </h1>
-      <form className="max-w-sm mx-auto w-full">
+      <form className="max-w-sm mx-auto w-full" action={create}>
         <div className="mb-5">
           <label
             htmlFor="email"
