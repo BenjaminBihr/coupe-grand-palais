@@ -1,10 +1,7 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import type { Metadata } from "next";
-import {
-   Geist,
-   Geist_Mono,
-   Martian_Mono,
-   Archivo
-  } from "next/font/google";
+import { Geist, Geist_Mono, Martian_Mono, Archivo } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -43,6 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}  ${martianMono.variable} ${archivo.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
