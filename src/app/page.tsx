@@ -23,7 +23,7 @@ export default function Home() {
             <h1 className="[family-name:var(--font-archivo)] text-sl mb-3">
               Du 5 au 9 février 2025
             </h1>
-            <h1 className="text-5xl font-semibold mb-3">
+            <h1 className="text-xl md:text-5xl font-semibold mb-3">
               Le Coupé Grand Palais à Rétromobile 2025
             </h1>
           </div>
