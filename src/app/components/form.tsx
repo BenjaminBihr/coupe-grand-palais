@@ -21,6 +21,26 @@ export default function Form() {
       <form className="max-w-sm mx-auto w-full" action={create}>
         <div className="mb-5">
           <label
+            htmlFor="reason"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Raison du contact
+          </label>
+          <select
+            defaultValue=""
+            id="reason"
+            className="bg-green-50 border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-700 dark:border-green-600 dark:placeholder-green-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+          >
+            <option value="" disabled hidden>
+              -- Sélectionnez une raison --
+            </option>
+            <option value="informations">Demande de renseignements</option>
+            <option value="press">Presse</option>
+            <option value="others">Autres</option>
+          </select>
+        </div>
+        <div className="mb-5">
+          <label
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
@@ -31,7 +51,7 @@ export default function Form() {
             id="email"
             name="email"
             className="shadow-xs bg-green-50 border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-700 dark:border-green-600 dark:placeholder-green-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500 dark:shadow-xs-light"
-            placeholder="email@example.com"
+            placeholder="email@exemple.fr"
             required
           />
         </div>
@@ -47,7 +67,7 @@ export default function Form() {
             name="message"
             rows={8}
             className="block p-2.5 w-full text-sm text-gray-900 bg-green-50 rounded-lg border border-green-300 focus:ring-green-500 focus:border-green-500 dark:bg-green-700 dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-            placeholder="Leave a comment..."
+            placeholder="Tapez votre message ici"
           ></textarea>
         </div>
         <div className="mb-5"></div>

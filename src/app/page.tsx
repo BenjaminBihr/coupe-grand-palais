@@ -9,7 +9,7 @@ export default function Home() {
         <Image
           className=""
           src="/grand-palais-logo-white.png"
-          alt="Next.js logo"
+          alt="Coupe Grand Palais logo"
           width={250}
           height={100}
           priority
@@ -62,7 +62,7 @@ export default function Home() {
 
         <Form />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center" />
     </div>
   );
 }
