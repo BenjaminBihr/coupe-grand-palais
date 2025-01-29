@@ -8,11 +8,13 @@ export default function Form() {
     const sql = neon(`${process.env.DATABASE_URL}`);
     const email = formData.get("email");
     const message = formData.get("message");
+    const reason = formData.get("reason");
+
     // Insert the comment from the form into the Postgres database
-    await sql("INSERT INTO messages (email, message) VALUES ($1, $2)", [
-      email,
-      message,
-    ]);
+    await sql(
+      "INSERT INTO messages (email, message, reason) VALUES ($1, $2, $3)",
+      [email, message, reason]
+    );
   }
 
   return (
@@ -29,6 +31,7 @@ export default function Form() {
           <select
             defaultValue=""
             id="reason"
+            name="reason"
             className="bg-green-50 border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-700 dark:border-green-600 dark:placeholder-green-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
           >
             <option value="" disabled hidden>
